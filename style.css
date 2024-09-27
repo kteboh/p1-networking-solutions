@@ -5,14 +5,15 @@
 }
 
 body {
-  max-width: 80%;
+  width: 1200px;
   margin: auto;
 }
 
 nav {
   display: flex;
-  width: 80%;
   justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo-container {
@@ -21,19 +22,16 @@ nav {
 
 .logo-image img {
   margin: 10px 0;
+  width: 30px;
 }
 
 .logo-text {
   margin: 20px 0;
-  font-size: small;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .links-container {
-  display: flex;
-}
-
-.log-in-container {
   display: flex;
 }
 
@@ -46,14 +44,57 @@ li {
   list-style: none;
   text-decoration: none;
   margin: 0 5px;
-  font-size: x-small;
-}
-
-.log-in-container li {
-  font-size: smaller;
+  font-size: 16px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  color: white;
+  background-color: brown;
+  opacity: 0.7;
+}
+
+.log-in-container {
+  display: flex;
+}
+
+.sign-up {
+  background-color: green;
+  width: 90px;
+  height: 38px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  background-color: orangered;
+  color: blue;
+}
+
+.creat-an-account {
+  background-color: orangered;
+  color: white;
+  margin-left: 15px;
+  border-radius: 5px;
+  width: 130px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.creat-an-account:hover {
+  background-color: green;
+  color: yellow;
+}
+
+.section-one-conatianer {
+  width: 1200px;
+  height: 400px;
+  background-image: linear-gradient(aquamarine 60%, rosybrown);
 }
