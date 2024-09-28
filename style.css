@@ -97,4 +97,66 @@ a:hover {
   width: 1200px;
   height: 400px;
   background-image: linear-gradient(aquamarine 60%, rosybrown);
+  border-radius: 10px;
+  position: relative;
+}
+
+.section-one-content {
+  display: flex;
+  align-items: center;
+}
+
+.section-one-text {
+  margin-left: 60px;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.section-one-content .text1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.section-one-content .text1 .solutions {
+  color: rosybrown;
+}
+
+.explore {
+  display: block;
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 100px;
+  height: 30px;
+  background-color: rosybrown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-one-content .section-one-image img {
+  margin-top: 30px;
+  margin-left: 100px;
+  padding: 20px;
+  width: 100%;
+}
+.section-one-image {
+  width: 350px;
+}
+
+.boy img {
+  width: 90px;
+  position: absolute;
+  top: 90px;
+  right: 60px;
+}
+
+.flower img {
+  position: absolute;
+  top: 320px;
+  right: 140px;
+  width: 100px;
 }
