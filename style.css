@@ -176,6 +176,7 @@ nav {
     text-transform: uppercase;
     margin-top: 283px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 h2 {
@@ -219,4 +220,54 @@ h2.title2 {
 .section-two h3 {
   font-size: 20px;
   text-transform: capitalize;
+}
+
+.section-three-content {
+  display: flex;
+    margin-top: 45px;
+}
+
+.section-three-image{}
+.section-three-image img {}
+
+.section-three-text {
+  margin-top: 130px;
+}
+
+.section-three-text span {
+  color: var(--accent-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-three-text h2 {
+  display: block;
+    line-height: 33px;
+    margin: 10px 0px;
+}
+
+.section-three-text p {
+  margin-bottom: 15px;
+    line-height: 26px;
+}
+/* check agian if it does not work when i save */
+.cards-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px;
+    gap: 10px;
+}
+
+.section-three-cards {
+  max-width: 370px;
+  display: flex;
+}
+
+.cards-image {
+  width: 60px;
+  margin-top: -7px;
+}
+
+.cards-image img {
+  width: 100%;
 }
