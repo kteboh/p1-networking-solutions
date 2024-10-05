@@ -271,3 +271,55 @@ h2.title2 {
 .cards-image img {
   width: 100%;
 }
+
+/* sections 3 and 4 look very similar kinda repeating styles*/
+
+.section-four-content {
+  display: flex;
+}
+
+.section-four-text {
+  margin-top: 100px;
+}
+
+.section-four-text span {
+  color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 500;
+} 
+
+.section-four-text h2 {
+  display: block;
+    line-height: 33px;
+    margin: 10px 0px;
+}
+
+.section-four-text p {
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+
+.section-four-cards-container {
+  display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 36px;
+}
+
+.section-four-cards-content {
+  max-width: 370px;
+  display: flex;
+}
+
+.section-four-cards-image {
+  width: 60px;
+    margin-top: -7px;
+}
+
+.section-four-cards-image img {
+  width: 100%;
+}
+
+.section-four-cards-text {
+  line-height: 25px;
+}
