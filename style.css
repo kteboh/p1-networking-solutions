@@ -1,3 +1,4 @@
+
 :root {
   --accent-color: #ef4995;
   --background-primary: #fff;
@@ -36,6 +37,10 @@ body {
 .button-default:hover {
   background-color: var(--background-primary);
   color: var(--text-dark);
+}
+
+p {
+  color: var(--text-light-secondary);
 }
 
 nav {
@@ -169,7 +174,7 @@ nav {
   width: 100%;
 }
 
-.section-two .features {
+.section-two-features {
   display: flex;
     justify-content: center;
     color: var(--accent-color);
@@ -179,30 +184,28 @@ nav {
     font-weight: 500;
 }
 
-h2 {
-  display: flex;
-    justify-content: center;
-    font-size: 25px;
-}
-
-h2.title2 {
-  margin-bottom: 40px;
+.section-two-title {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 40px;
+  
 }
 
 .section-two-content {
   display: grid;
+  /* investigate why we dont need grid row here  */
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    gap: 20px;
 }
 
 .section-two-cards {
   display: flex;
+  gap: 10px;
 }
 
 
 .section-two-image {
-  max-width: 100px;
+  max-width: 55px;
 }
 
 
@@ -220,15 +223,13 @@ h2.title2 {
 .section-two h3 {
   font-size: 20px;
   text-transform: capitalize;
+  margin-bottom: 5px;
 }
 
 .section-three-content {
   display: flex;
     margin-top: 45px;
 }
-
-.section-three-image{}
-.section-three-image img {}
 
 .section-three-text {
   margin-top: 130px;
@@ -250,7 +251,7 @@ h2.title2 {
   margin-bottom: 15px;
     line-height: 26px;
 }
-/* check agian if it does not work when i save */
+
 .cards-container {
   display: grid;
     grid-template-columns: 1fr 1fr;
@@ -261,11 +262,14 @@ h2.title2 {
 .section-three-cards {
   max-width: 370px;
   display: flex;
+  gap: 10px;
 }
 
 .cards-image {
-  width: 60px;
-  margin-top: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E2E2F3;
 }
 
 .cards-image img {
