@@ -256,7 +256,6 @@ nav {
   display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px 70px;
-    gap: 10px;
 }
 
 .section-three-cards {
@@ -306,12 +305,12 @@ nav {
 .section-four-cards-container {
   display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin-top: 36px;
 }
 
 .section-four-cards-content {
-  max-width: 370px;
+  max-width: 340px;
   display: flex;
 }
 
@@ -326,6 +325,10 @@ nav {
 
 .section-four-cards-text {
   line-height: 25px;
+}
+
+.background-container {
+  background-color: #F5F5F5;
 }
 
 .section-five {
@@ -426,3 +429,195 @@ nav {
 .section-five-office-text h4 {
   margin: 10px 0;
 }
+
+.section-six {
+  margin-top: 200px;
+}
+
+.section-six-content {
+  display: flex;
+}
+
+.section-six-image {
+  width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.section-six-text {
+  margin-top: 90px;
+}
+
+.section-six-text span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.section-six-text h2 {
+  display: block;
+    line-height: 33px;
+    margin: 10px 0px;
+}
+
+.section-six-text p {
+  max-width: 600px;
+    margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.section-six-cards-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px;
+}
+
+.section-six-cards {
+  max-width: 300px;
+  display: flex;
+  gap: 10px;
+}
+
+.cards-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E2E2F3;
+}
+/* check latter if it works*/
+.cards-text {
+  margin-bottom: 15px;
+    line-height: 26px;
+}
+
+.section-six-cards2{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.section-six-cards2-content {
+  display: flex;
+  gap: 10px;
+  max-width: 350px;
+  justify-content: space-around;
+}
+/* check why the image does not work */
+.image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E2E2F3;
+}
+
+.section-seven {
+  background-color: #F5F5F5;
+  margin-top: 100px;
+}
+
+.section-seven-content {
+  display: flex;
+  gap: 100px;
+}
+
+.section-seven-image {
+  width: 600px;
+}
+
+.section-seven-image img {
+  width: 100%;
+}
+
+.section-seven-text {
+  margin-top: 80px;
+}
+
+.section-seven-text span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.section-seven h2 {
+  display: block;
+  line-height: 33px;
+  margin: 10px 0px 30px;
+}
+
+.section-seven-cards-content {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.section-seven-cards-image {
+  width: 40px;
+}
+
+.section-seven-cards-image img {
+  width: 100%;
+}
+
+.section-seven-cards-text h4 {
+  line-height: 26px;
+}
+
+.section-seven-cards-text p {
+  line-height: 26px;
+}
+
+.section-eight-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 1000px;
+    background-image: linear-gradient(45deg, #e5f1fe 0%, #eec9da 100%);
+    border-radius: 15px;
+    margin: auto;
+}
+.section-eight-content span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin-left: 140px;
+}
+
+.section-eight-content h2 {
+  margin-top: 25px;
+    display: block;
+    line-height: 33px;
+}
+
+.section-eight-content button {
+  margin-left: 160px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  transition: 0.2s all;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  font-size: 14px;
+  background-color: var(--accent-color);
+  color: var(--text-light);
+  margin-top: 36px;
+}
+
+.footer-container {
+  display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 70px 0;
+}
+
+.footer-content p {
+  max-width: 90px;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+/* yet to finish the css in the footer and small details all over the page*/
