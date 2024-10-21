@@ -614,10 +614,45 @@ nav {
 
 .footer-content p {
   max-width: 90px;
+  line-height: 26px;
 }
 
 .footer-content ul {
   list-style: none;
+  line-height: 26px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  line-height: 26px;
+}
+
+.footer-content span {
+  line-height: 26px;
+}
+
+.footer-fieldset {
+  flex-direction: row;
+    display: flex;
+    border: 1px solid whitesmoke;
+    max-width: 260px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.footer-fieldset input {
+  height: 50px;
+  padding: 10px;
+  border: none;
+}
+
+.footer-fieldset button {
+  width: 70px;
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    font-size: 16px;
 }
 
 /* yet to finish the css in the footer and small details all over the page*/
