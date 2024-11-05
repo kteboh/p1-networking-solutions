@@ -32,6 +32,7 @@ body {
   font-size: 14px;
   background-color: var(--accent-color);
   color: var(--text-light);
+  width: 150px;
 }
 
 .button-default:hover {
@@ -41,6 +42,16 @@ body {
 
 p {
   color: var(--text-light-secondary);
+  line-height: 26px;
+}
+
+.gray-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E2E2F3;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 nav {
@@ -102,6 +113,20 @@ nav {
   background-color: var(--accent-color);
   color: var(--text-light);
 }
+/* some default styles */
+section {
+  padding: 0 70px;
+}
+
+
+img {
+  width: 100%;
+}
+
+text {
+  line-height: 26px;
+}
+
 
 /* section one */
 .section-one {
@@ -137,11 +162,11 @@ nav {
   color: var(--accent-color);
 }
 
+/* TODO: line-height */
 .section-one-content .description {
   font-size: 18px;
   margin-bottom: 10px;
   color: var(--text-light-secondary);
-  line-height: 30px;
 }
 
 .section-one-image {
@@ -193,7 +218,7 @@ nav {
 
 .section-two-content {
   display: grid;
-  /* investigate why we dont need grid row here  */
+  /* TODO: investigate why we dont need grid row here  */
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
@@ -208,15 +233,9 @@ nav {
   max-width: 55px;
 }
 
-
-.section-two-image img {
-  width: 100%;
-}
-
-
 .section-two-text {
   max-width: 320px;
-  line-height: 25px;
+  line-height: 26px;
 }
 
 
@@ -231,8 +250,13 @@ nav {
     margin-top: 45px;
 }
 
+.section-three-image {
+  width: 578px;
+}
+
 .section-three-text {
   margin-top: 130px;
+  width: 500px;
 }
 
 .section-three-text span {
@@ -249,7 +273,6 @@ nav {
 
 .section-three-text p {
   margin-bottom: 15px;
-    line-height: 26px;
 }
 
 .cards-container {
@@ -264,25 +287,13 @@ nav {
   gap: 10px;
 }
 
-.cards-image {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #E2E2F3;
-}
-
-.cards-image img {
-  width: 100%;
-}
-
-/* sections 3 and 4 look very similar kinda repeating styles*/
-
 .section-four-content {
   display: flex;
 }
 
 .section-four-text {
   margin-top: 70px;
+  width: 500px;
 }
 
 .section-four-text span {
@@ -299,7 +310,6 @@ nav {
 
 .section-four-text p {
   margin-bottom: 15px;
-  line-height: 26px;
 }
 
 .section-four-cards-container {
@@ -309,9 +319,11 @@ nav {
     margin-top: 36px;
 }
 
+/* TODO: Global gaps */
 .section-four-cards-content {
   max-width: 340px;
   display: flex;
+  gap: 10px;
 }
 
 .section-four-cards-image {
@@ -319,21 +331,19 @@ nav {
     margin-top: -7px;
 }
 
-.section-four-cards-image img {
-  width: 100%;
-}
-
 .section-four-cards-text {
   line-height: 25px;
+}
+
+.section-four-image {
+  width: 640px;
 }
 
 .background-container {
   background-color: #F5F5F5;
 }
 
-.section-five {
-  background-color: #F5F5F5;
-}
+
 
 .section-five-border-container {
   height: 500px;
@@ -364,10 +374,6 @@ nav {
   width: 50px;
 }
 
-.section-five-cards1-image img {
-  width: 100%;
-}
-
 .section-five-cards2 {
   display: flex;
     gap: 20px;
@@ -376,16 +382,17 @@ nav {
 }
 
 .section-five-cards2-content {
-  max-width: 250px;
+  max-width: 220px;
     height: 250px;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
+    border-bottom: 10px solid #CFCEEA;
 }
 
-.section-five-cards2-content p {
+/* .section-five-cards2-content p {
   line-height: 30px;
-}
+}   will prefer to leave this as 30px but because of uniformity lets leave it at 26px */
 
 .section-five-cards2-content h4 {
   margin-top: 10px;
@@ -411,19 +418,21 @@ nav {
   display: flex;
   gap: 20px;
   justify-content: center;
+  width: 930px;
 }
 
 .section-five-office-image {
   width: 300px;
 }
 
-.section-five-office-image img {
-  width: 100%;
-}
-
 .section-five-office-text-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.section-five-date-container {
+  display: flex;
+  gap: 20px;
 }
 
 .section-five-office-text h4 {
@@ -431,20 +440,22 @@ nav {
 }
 
 .section-six {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .section-six-content {
   display: flex;
+  gap: 60px;
 }
 
-.section-six-image {
+/* check general section-6 */
+/* .section-six-image {
   width: 550px;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     gap: 20px;
-}
+} */
 
 .section-six-text {
   margin-top: 90px;
@@ -465,7 +476,6 @@ nav {
 .section-six-text p {
   max-width: 600px;
     margin-bottom: 15px;
-    line-height: 26px;
 }
 
 .section-six-cards-container {
@@ -486,10 +496,9 @@ nav {
   border-radius: 50%;
   background-color: #E2E2F3;
 }
-/* check latter if it works*/
+
 .cards-text {
   margin-bottom: 15px;
-    line-height: 26px;
 }
 
 .section-six-cards2{
@@ -504,12 +513,9 @@ nav {
   max-width: 350px;
   justify-content: space-around;
 }
-/* check why the image does not work */
-.image {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #E2E2F3;
+
+.section-six-cards2-content p {
+  margin-top: 10px;
 }
 
 .section-seven {
@@ -520,14 +526,16 @@ nav {
 .section-seven-content {
   display: flex;
   gap: 100px;
+  margin-bottom: 100px;
 }
 
 .section-seven-image {
-  width: 600px;
+  width: 550px;
 }
 
-.section-seven-image img {
-  width: 100%;
+
+.section-seven-image2 {
+  width: 40px;
 }
 
 .section-seven-text {
@@ -552,19 +560,7 @@ nav {
   margin: 15px 0;
 }
 
-.section-seven-cards-image {
-  width: 40px;
-}
-
-.section-seven-cards-image img {
-  width: 100%;
-}
-
 .section-seven-cards-text h4 {
-  line-height: 26px;
-}
-
-.section-seven-cards-text p {
   line-height: 26px;
 }
 
@@ -603,6 +599,7 @@ nav {
   background-color: var(--accent-color);
   color: var(--text-light);
   margin-top: 36px;
+  width: 150px;
 }
 
 .footer-container {
@@ -614,12 +611,10 @@ nav {
 
 .footer-content p {
   max-width: 90px;
-  line-height: 26px;
 }
 
-.footer-content ul {
-  list-style: none;
-  line-height: 26px;
+.footer-content p.policy {
+  text-wrap: nowrap;
 }
 
 .footer-content h4 {
@@ -639,6 +634,7 @@ nav {
     border-radius: 5px;
     margin-top: 20px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    
 }
 
 .footer-fieldset input {
@@ -648,11 +644,13 @@ nav {
 }
 
 .footer-fieldset button {
-  width: 70px;
+  width: 76px;
     background-color: var(--accent-color);
     border: none;
     color: white;
     font-size: 16px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* yet to finish the css in the footer and small details all over the page*/
