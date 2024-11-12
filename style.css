@@ -27,13 +27,11 @@ body {
   border: 1px solid var(--accent-color);
   cursor: pointer;
   transition: 0.2s all;
-  padding: 10px 15px;
+  padding: 18px 40px;
   text-transform: capitalize;
   font-size: 14px;
   background-color: var(--accent-color);
   color: var(--text-light);
-  width: 165px;
-  height: 50px;
 }
 
 .button-default:hover {
@@ -117,6 +115,7 @@ nav {
 /* some default styles */
 section {
   padding: 0 70px;
+
 }
 
 
@@ -431,6 +430,10 @@ span.numbers {
   width: 930px;
 }
 
+.section-five-office-image-container h4 {
+  margin: 15px 0;
+}
+
 .section-five-office-image {
   width: 300px;
 }
@@ -576,55 +579,61 @@ span.numbers {
 
 .section-eight-container {
   display: flex;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 300px;
-    width: 1000px;
     background-image: linear-gradient(45deg, #e5f1fe 0%, #eec9da 100%);
     border-radius: 15px;
-    margin: auto;
 }
+
 .section-eight-content span {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--accent-color);
-  margin-left: 140px;
 }
 
-.section-eight-content h2 {
-  margin-top: 25px;
-    display: block;
+.section-eight-container h2 {
+  margin: 25px 0;
     line-height: 33px;
 }
 
-.section-eight-content button {
-  margin-left: 160px;
+.section-eight-container button {
   border-radius: var(--border-radius);
   border: 1px solid var(--accent-color);
   cursor: pointer;
   transition: 0.2s all;
-  padding: 10px 15px;
+  padding: 18px 40px;
   text-transform: capitalize;
   font-size: 14px;
   background-color: var(--accent-color);
   color: var(--text-light);
-  margin-top: 36px;
-  width: 150px;
 }
 
 .footer-container {
-  display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin: 70px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 100px;
 }
 
-.footer-content p {
-  max-width: 90px;
+.footer-content ul {
+  list-style: none;
 }
 
-.footer-content p.policy {
-  text-wrap: nowrap;
+.footer-content ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+
+.footer-content ul li a:hover {
+  color: var(--accent-color);
+}
+
+
+.links-container li {
+  list-style: none;
 }
 
 .footer-content h4 {
@@ -637,8 +646,8 @@ span.numbers {
 }
 
 .footer-fieldset {
+  display: flex;
   flex-direction: row;
-    display: flex;
     border: 1px solid whitesmoke;
     max-width: 260px;
     border-radius: 5px;
@@ -661,6 +670,7 @@ span.numbers {
     font-size: 16px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
 }
 
 /* yet to finish the css in the footer and small details all over the page*/
